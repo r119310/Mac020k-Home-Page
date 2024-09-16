@@ -1,0 +1,15 @@
+footer{
+    position: relative;
+    bottom: 0px;
+    width: auto;
+    height: 3em;
+    background-color: var(--backgroundCLR);
+    text-align: center;
+    border-top: 3px solid var(--borderCLR);
+    /* margin: 2em; */
+}
+
+.footertext{
+    margin:0.5em;
+    font-weight: bold;
+}

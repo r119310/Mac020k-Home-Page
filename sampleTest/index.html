@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project {
+            margin-bottom: 15px;
+        }
+        .project-title {
+            font-size: 20px;
+            color: #333;
+        }
+        .project-description {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Justin Bieber's Portfolio</h1>
+    <div id="projects"></div>
+</div>
+
+<script>
+    // JSONファイルを読み込んでHTMLに反映
+    fetch('projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectsContainer = document.getElementById('projects');
+            data.projects.forEach(project => {
+                const projectDiv = document.createElement('div');
+                projectDiv.classList.add('project');
+                
+                const title = document.createElement('a');
+                title.classList.add('project-title');
+                title.textContent = project.title;
+                title.href = project.url;
+                title.target = "_blank";
+                
+                const description = document.createElement('p');
+                description.classList.add('project-description');
+                description.textContent = project.description;
+                
+                projectDiv.appendChild(title);
+                projectDiv.appendChild(description);
+                projectsContainer.appendChild(projectDiv);
+            });
+        })
+        .catch(error => console.error('Error fetching the projects:', error));
+</script>
+
+</body>
+</html>

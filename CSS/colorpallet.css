@@ -1,0 +1,53 @@
+:root{/*Basic Colors*/
+    --MacRed: #F82846;
+        --MacRed3lighten: #FED3DA;
+        --MacRed2lighten: #FCA9B6;
+        --MacRed1lighten: #FB7D91;
+        --MacRed1darken: #D20625;
+        --MacRed2darken: #8C0418;
+    
+    --MacBlue:#2D81FD;
+        --MacBlue3lighten: #D5E6FF;
+        --MacBlue2lighten: #ABCCFE;
+        --MacBlue1lighten: #81B3FE;
+        --MacBlue1darken: #0259DD;
+        --MacBlue2darken: #013C94;
+    
+    --MacGreen: #16CC7B;
+        --MacGreen3lighten: #CBFAE4;
+        --MacGreen2lighten: #98F3CA;
+        --MacGreen1lighten: #64EEB0;
+        --MacGreen1darken: #10985A;
+        --MacGreen2darken: #0B663D;
+    
+    --MacYellow: #F1D60F;
+        --MacYellow3lighten: #FCF7CF;
+        --MacYellow2lighten: #F9EE9F;
+        --MacYellow1lighten: #F7E66F;
+        --MacYellow1darken: #B59F0B;
+        --MacYellow2darken: #786A07;
+    
+    --MacOrange: #E6690C;
+        --MacOrange3lighten: #FCE0CB;
+        --MacOrange2lighten: #FAC198;
+        --MacOrange1lighten: #F7A466;
+        --MacOrange1darken: #AC4E09;
+        --MacOrange2darken: #733406;
+
+    --MacPurple: #7E43D5;
+        --MacPurple3lighten: #E4D9F7;
+        --MacPurple2lighten: #CAB3EE;
+        --MacPurple1lighten: #B18EE6;
+        --MacPurple1darken: #5B26AC;
+        --MacPurple2darken: #3E1A73;
+}
+
+:root{
+    --clear: #ffffff00;
+    --backgroundCLR : white;
+    --textCLR: #1F223A;
+    --textCLR1lighten: #626475;
+    --textCLR2lighten: #A5A7B0;
+    --textAltCLR: white;
+    --borderCLR : var(--MacBlue1lighten);
+}

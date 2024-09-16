@@ -1,0 +1,22 @@
+<script>
+    const languageToURL = {
+        'en': './EN/home.html',
+        'ja': './JP/home.html',
+    };
+
+    function getUserLanguage() {
+        const userLanguage = navigator.language || navigator.userLanguage;
+        return userLanguage.split('-')[0];
+    }
+
+    function redirectToLanguagePage() {
+        const userLanguage = getUserLanguage();
+        const defaultLanguage = 'en';
+
+        const targetURL = languageToURL[userLanguage] || languageToURL[defaultLanguage];
+
+        window.location.href = targetURL;
+    }
+
+    window.onload = redirectToLanguagePage;
+</script>

@@ -1,0 +1,77 @@
+header{
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    position: fixed;
+    background-color: var(--backgroundCLR);
+    font-size: 1.3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--textCLR);
+    border-bottom: 3px solid var(--borderCLR);
+}
+
+#headerBox{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#header-page{
+    margin-top: 0.4em;       
+    width: auto;        
+    height: auto;
+}
+
+#page-list{
+    height: 1.8em;
+    width: auto;
+    display: flex;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 1px;
+}
+
+.page-item{
+    width: 10vw;
+    min-width: 130px;
+    margin: auto;
+    margin-top : 0.25em;
+    margin-bottom: 0.25em;
+    padding: auto;
+    padding-top: 0.1em;
+    text-decoration: none;
+    color: var(--textCLR);
+    /* border-radius: 2em; */
+    /* background-color: linear-gradient(to top, var(--borderCLR) 50%, white 50%); */
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.page-item:hover{
+    /* background-color: var(--MacBlue3lighten); */
+    /* opacity: 60%; */
+    color: var(--MacBlue);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.page-item-text{
+    width: 100%;
+    /* text-align: center;
+    display: flex;
+    align-content: center; */
+    text-decoration: none;
+    text-align: center;
+    /* margin-bottom: 5px; */
+}
+
+#headerIcon{
+    margin: auto;
+    width: 1.6em;
+    height: auto;
+}
