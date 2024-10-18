@@ -8,6 +8,8 @@ body{
     background-repeat: repeat;
     background-size: contain;
     background-size: 8vw;
+    font-family: "Noto Sans JP", sans-serif;
+    line-break: strict;
 }
 
 main{
@@ -26,6 +28,11 @@ main{
 
 p{
     margin: 0px;
+}
+
+a {
+    color: inherit;  /* 親要素の色を継承する */
+    text-decoration: none;  /* 下線を削除 */
 }
 
 img{
@@ -47,6 +54,7 @@ h1{
     margin-block-end: 0.1em;
     /* border-bottom: 1px solid #A1A2AD; */
 }
+
 #discription{
     display: flex;
     justify-content: center;
@@ -169,7 +177,7 @@ h1{
 
 .conponentTop{
     padding: 0px;
-    padding-left: 1em;
+    padding-left: 0.5em;
     text-align: left;
     opacity: 0.7;
     width: auto;
@@ -184,5 +192,47 @@ h1{
 }
 
 @media (min-width:1px) and (max-width:749px) {
+    body{
+        overflow-x: hidden;
+    }
 
+    main{
+        width: 100vw;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        margin-left: 1em;
+    }
+
+    #discription{
+        display: block;
+        text-align: center;
+    }
+    
+    #selfPict{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #ssIntro{
+        max-width: none;
+        width: auto;
+        margin-left: 3em;
+        margin-right: 3em;
+        text-align: left;
+    }
+
+    .textbox{
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+        width: auto;
+    }
+
+    .listConponent .textbox{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }

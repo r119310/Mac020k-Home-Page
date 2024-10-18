@@ -1,21 +1,23 @@
-<header id="header">
+<header>
+    <input type="checkbox" id="burger-toggle"  class="burger-btn">
     <div id="headerBox">
-            <nav id="header-page">
+        <nav id="header-page">
             <div id="page-list">
-                <img src="/Images/Mac020k_icon.svg" id="headerIcon">
-                <div class="page-item"><div class="page-item-text">Home</div></div>
-                <div class="page-item"><div class="page-item-text">Profile</div></div>
-                <a class="page-item" href="https://blog.mac020k.com"><div class="page-item-text">Blog</div></a>
-                <!-- <div class="page-item"><div class="page-item-text" onclick="Mac020kLink()">Fun</div></div> -->
-                <div class="page-item"><div class="page-item-text JP2EN" onclick="profileENLink()">English</div></div>
+                <label for="burger-toggle" id="burger">
+                    <img src="/Images/Mac020k_icon.svg" id="headerIcon">
+                </label>
+                <div id="page-items">
+                    <!-- <div class="page-item" onclick="homeLink()"><div class="page-item-text">Home</div></div> -->
+                    <div class="page-item" onclick="profileLink()"><div class="page-item-text">Profile</div></div>
+                    <div class="page-item"><a class="page-item-text" href="https://blog.mac020k.com">Blog</a></div>
+                    <!-- <div class="page-item"><div class="page-item-text" onclick="Mac020kLink()">Fun</div></div> -->
+                    <div id="lang">
+                        <div class="page-item" onclick="JPLink()"><div class="page-item-text">Ja</div></div>
+                        <div id="slash">/</div>
+                        <div class="page-item" onclick="ENLink()"><div class="page-item-text">En</div></div>
+                    </div>
+                </div>
             </div>
         </nav>
     </div> 
-    <!-- <button class="burger-btn">
-        <span class="bar bar_top"></span>
-        <span class="bar bar_mid"></span>
-        <span class="bar bar_bottom"></span>
-    </button> -->
-
-    <script src="/Javascript/header.js"></script>
 </header>
