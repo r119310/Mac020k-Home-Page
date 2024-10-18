@@ -118,14 +118,10 @@ header input{
         border: 0px var(--clear);
     }
 
-    #page-list{
-        display: inline;
-    }
-
     #header-page{
         margin: 0;
-        width: 100vw;
-        height: 100vh;
+        /* width: 100vw;
+        height: 100vh; */
         display: flex;
         justify-content: center; 
         align-items: center; 
@@ -143,6 +139,8 @@ header input{
     }
 
     #page-items{
+        position: relative;
+        top: 50vh;
         display: block;
         height: 60%;
         width: auto;
@@ -210,7 +208,7 @@ header input{
     }
 
     .burger-btn:checked + #header-page{
-        width: auto;
+        width: 100vw;
         height: 100vh;
     }
 
